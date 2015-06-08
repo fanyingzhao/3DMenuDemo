@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="77" id="KGk-i7-Jjw" customClass="MenuItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="RED-6c-Zge" customClass="clock">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="79.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="RED-6c-Zge" secondAttribute="trailing" id="2Dh-EH-bgw"/>
+                    <constraint firstAttribute="bottom" secondItem="RED-6c-Zge" secondAttribute="bottom" id="9jR-ys-f1x"/>
+                    <constraint firstItem="RED-6c-Zge" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mzc-sr-DPW"/>
+                    <constraint firstItem="RED-6c-Zge" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i3F-8Z-lec"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backimage" destination="RED-6c-Zge" id="oNj-zD-pXZ"/>
+            </connections>
+            <point key="canvasLocation" x="20" y="340.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock.png" width="80" height="80"/>
+    </resources>
+</document>
