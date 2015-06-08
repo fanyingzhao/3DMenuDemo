@@ -25,6 +25,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     NSString* path = [[NSBundle mainBundle] pathForResource:@"MenuItems" ofType:@"plist"];
     self.array = [NSArray arrayWithContentsOfFile:path];
 }
